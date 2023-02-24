@@ -1,7 +1,0 @@
-import numpy as np
-import matplotlib.pyplot as plt
-%matplotlib inline
-image = plt.imread('stinkbug.png')
-fig, ax = plt.subplots()
-ax.imshow(image)
-plt.show()
