@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello_world():
-    print("<p>Heyyyyyy</p>")
-    return "<p>Hi</p>"
+    
+    return "<p>Hello '\n' testing testing</p>"
 
-print("<p>Heyyyyyy</p>")
