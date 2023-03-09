@@ -1,16 +1,15 @@
 from math import factorial, sin, radians
 
-def taylor_exp_e(x,n_int):
+def taylor_exp_e(x,n):
     approx = 0
-    for i in range(n_int):
+    for i in range(n):
         term = x**i/factorial(i)
         approx = approx + term
     return approx
 
-def taylor_exp_sin(x,n_int):
+def taylor_exp_sin(x,n):
     approx = 0
-    x = radians(x)
-    for i in range(n_int):
-        term = (-1)** n_int * (x**(2*n_int + 1)/factorial(2* n_int + 1))
+    for i in range(n):
+        term = (-1)** n * (x**(2* n + 1)/factorial(2* n + 1))
         approx = approx + term
         return approx
